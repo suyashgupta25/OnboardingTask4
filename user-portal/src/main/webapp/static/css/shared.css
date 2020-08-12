@@ -1,0 +1,21 @@
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+button > a:hover,
+button > a:active {
+    text-decoration: none;
+
+}
+
+#back-button {
+    transition: transform 0.1s ease-in-out;
+}
+
+#back-button:hover {
+    transform: scale(1.12);
+}

@@ -1,0 +1,22 @@
+server:
+    port: 8100
+spring:
+    application:
+        name: user-portal
+    mvc:
+        view:
+            prefix: /WEB-INF/views/
+            suffix: .jsp
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        password: 'Activa@25'
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/data?useUnicode=yes&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        username: suyash
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+logging:
+    level:
+        com.netflix.eureka: OFF
+        com.netflix.discovery: OFF
